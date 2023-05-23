@@ -13,7 +13,7 @@ let b = 45;
 b=45;//reinitialization is possible
 console.log(b);
 {// in block scope it will not give an error
-    let b = "Hello World";// this b is different from the above b
+    let b = "this is inside the block";// this b is different from the above b
     console.log(b);
 }
 console.log(b);
