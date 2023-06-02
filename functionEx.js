@@ -18,7 +18,7 @@ const sum = (x,y)=>{
 let d=sum(34,67);
 console.log(d)
 console.log("sum is ",sum(a,b));
-//no return function not holding any value but all operation executed in code block
+//no return function not holding any value but all operation executed in block scope
 let c=null;
 const noReturn =(x,y) =>{
     console.log("hello world");
