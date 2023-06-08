@@ -12,3 +12,10 @@ console.warn('hey don\'t go there');//this give you a warning massage in yellow 
 console.assert(55>3);//if condition is true it will don't give any error 
 console.assert(55<3);// if false it gives a special error massage 'Assertion failed'
 console.clear();//clear the console
+console.log(console)// you acn see other console functions
+// you can measure the time using .time() function with same tag name in this case 'forLoop' 
+console.time('forLoop');
+for(let i=0;i<7;i++){
+    console.log(i);
+}
+console.timeEnd('forLoop');
