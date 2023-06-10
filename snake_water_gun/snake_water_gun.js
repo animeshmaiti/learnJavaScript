@@ -1,3 +1,9 @@
+/*
+use javascript to create a game of snake water gun, the game should 
+ask you to enter S,W,G. The computer should be able to randomly generate
+S, W or G and declare win or loss using alert use confirm and prompt
+whenever required
+*/
 // const prompt = require("prompt-sync")({ sigint: true });
 const character = 'SWG';
 let runAgain = true, i = 0, j = 0;
