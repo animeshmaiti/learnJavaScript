@@ -1,10 +1,4 @@
 // const prompt = require("prompt-sync")({ sigint: true });
-/*
-s>w
-W>G
-G>S
-==
-*/
 const character = 'SWG';
 let runAgain = true, i = 0, j = 0;
 while (runAgain) {
