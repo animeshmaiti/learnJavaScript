@@ -43,6 +43,7 @@ console.log(num4)//[ 677, 389, 455, 233, 78, 34 ]
 
 // splice(index "2",next no. of elements to delete "4",add elements "34,67,78,79,88")
 //and its return deleted array type of return is array
+// syntax=> array.splice(index, howmany, item1, ....., itemX)
 let num5=[1,2,3,4,5,6,7,8,9];
 console.log(num5.length);// 9
 let result=num5.splice(2,4,34,67,78,79,88);// from index 2 to delete next 4 elements and add that deleted index 34,67,78,79,88
