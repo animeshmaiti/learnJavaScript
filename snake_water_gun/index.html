@@ -2,8 +2,25 @@
 <html lang="en">
 <head>
     <title>Snake Water Gun</title>
+    <style>
+        .result{
+            font-size: large;
+        }
+        .score:nth-child(odd){
+            font-size: medium;
+            color: cyan;
+        }
+        .score:nth-child(even){
+            font-size: medium;
+            color: red;
+        }
+    </style>
 </head>
 <body>
+    <button onclick="playAgain()">Play Again</button>
+    <div id="result">
+
+    </div>
     <script src="snake_water_gun.js"></script>
 </body>
 </html>

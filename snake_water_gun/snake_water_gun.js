@@ -7,46 +7,50 @@ whenever required
 // const prompt = require("prompt-sync")({ sigint: true });
 const character = 'SWG';
 let runAgain = true, i = 0, j = 0;
-while (runAgain) {
+const win='you win the match',lost='you lost the match';
+let divObj=document.getElementById('result');
+const documentWrite=(massage)=>{
+    divObj.innerHTML=`
+    <div class='result'>${massage}</div>
+    <div class='score'>comp score is: ${j}</div>
+    <div class='score'>your score is: ${i}</div>
+    `
+}
+const playAgain=()=>{
     let num = Math.floor(Math.random() * 3);
     console.log(character[num]);
-    let a = prompt('enter you choice S=snake W=water G=gun');
-    a = a.toUpperCase();
+    let user = prompt('enter your choice S=snake W=water G=gun');
+    user = user.toUpperCase();
 
-    if (character[num] == a) {
-        alert("Match draw");
-        runAgain = confirm("do you want the prompt again");
+    if (character[num] == user) {
+        documentWrite('draw');
     }
-    else if (character[num] == 'S' && a == 'W') {
-        alert('you lost the match');
+    else if (character[num] == 'S' && user == 'W') {
         j++;
-        runAgain = confirm("do you want the prompt again");
+        documentWrite(lost);
     }
-    else if (character[num] == 'W' && a == 'G') {
-        alert('you lost the match');
+    else if (character[num] == 'S' && user == 'G') {
+        i++;
+        documentWrite(win);
+    }
+    else if (character[num] == 'W' && user == 'G') {
+        // alert('you lost the match');
         j++;
-        runAgain = confirm("do you want the prompt again");
+        documentWrite(lost);
     }
-    else if (character[num] == 'G' && a == 'S') {
-        alert('you lost the match');
+    else if (character[num] == 'W' && user == 'S') {
+        // alert('you win the match');
+        i++;
+        documentWrite(win);
+    }
+    else if (character[num] == 'G' && user == 'S') {
+        // alert('you lost the match');
         j++;
-        runAgain = confirm("do you want the prompt again");
+        documentWrite(lost);
     }
-    else if (character[num] == 'S' && a == 'G') {
-        alert('you win the match');
+    else if (character[num] == 'G' && user == 'W') {
+        // alert('you win the match');
         i++;
-        runAgain = confirm("do you want the prompt again");
+        documentWrite(win);
     }
-    else if (character[num] == 'W' && a == 'S') {
-        alert('you win the match');
-        i++;
-        runAgain = confirm("do you want the prompt again");
-    }
-    else if (character[num] == 'G' && a == 'W') {
-        alert('you win the match');
-        i++;
-        runAgain = confirm("do you want the prompt again");
-    }
-    alert(`your score is ${i} and comp score is ${j}`)
-
 }
