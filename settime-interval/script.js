@@ -30,5 +30,9 @@ let b = setInterval(() => {
 
 const stopInterval = () => {
     clearInterval(b);
+    clearInterval(c);
     divObj.innerHTML+='interval stopped'
 }
+let c=setInterval(()=>{
+    document.querySelector('#bulb').classList.toggle('bulb')
+},300)
