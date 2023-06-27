@@ -1,9 +1,12 @@
 let time = document.querySelector('#time');
 let date = document.querySelector('#date');
+let a;
 document.addEventListener('DOMContentLoaded', () => {
-    setInterval(showTime, 1000);
+    a=setInterval(showTime, 1000);
 });
-
+const stopTime = () => {
+    clearInterval(a);
+}
 const showTime = () => {
     let a = new Date();
     let hours = a.getHours();
@@ -23,9 +26,9 @@ const showTime = () => {
     seconds=seconds<10?`0${seconds}`:seconds;
 
     time.innerHTML = `${hours}:${minutes}:
-    <div class="seconds">${seconds}</div>
+    <span class="seconds">${seconds}</span>
     <div class="time-of-day">${period}</div>`;
-    
+
     date.innerHTML = `${dayName}, ${dd} ${monthName} ${yy}`;
 }
 

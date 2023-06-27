@@ -19,7 +19,7 @@
     height: 250px;
 }
 .main-time{
-    width: 100%;
+    width: fit-content;
     display: flex;
     align-items: flex-end;
     font-size: 100px;
@@ -39,4 +39,7 @@
     position: relative;
     height: fit-content;
     bottom: 15px;
+}
+.seconds{
+    /* width: 1px; */
 }
