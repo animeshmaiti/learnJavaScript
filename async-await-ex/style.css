@@ -1,0 +1,70 @@
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    /* overflow: hidden; */
+    gap: 10px;
+}
+
+.editor {
+    padding: 10px;
+    border-radius: 5px;
+    background: #cccccc;
+    color: #373737;
+    font: courier;
+    height: 100%;
+    width: 50%;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    height: 10%;
+}
+
+button {
+    background-color: greenyellow;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 255, 0);
+}
+
+textarea {
+    /* padding: 10px 0; */
+    border-radius: 3px;
+    width: 100%;
+    height: 90%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: #fff;
+    /* background: white; */
+    color: #373737;
+}
+
+.terminal {
+    padding: 10px;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    font: courier;
+    padding: 10px;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+#output {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(51, 255, 0);
+}
