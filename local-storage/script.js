@@ -14,3 +14,6 @@ const setValue = () => {
 console.log(`stored key at index 0 in local storage ${localStorage.key(0)}`);
 console.log(`length of local storage ${localStorage.length}`);
 console.log(localStorage.getItem("blue"));// getItem returns the value of the key 
+for(let i=0; i<localStorage.length; i++){
+    console.log(`key at index ${i} is ${localStorage.key(i)}`);
+}
