@@ -8,7 +8,7 @@ response
     // console.log(data);
     html = "";
     for (const item in data) {
-        console.log(data[item]);
+        // console.log(data[item]);
         html += `<div class="card" style="width: 18rem;">
         <img src="https://startit.rs/media/coding-contest_march_18_1200px.jpg" class="card-img-top" alt="...">
         <div class="card-body">
