@@ -40,9 +40,7 @@ button.add:hover {
     cursor: pointer;
 }
 
-.details {
-    padding: 10px;
-}
+
 
 .todoList {
     min-width: 20%;
@@ -51,10 +49,22 @@ button.add:hover {
     background-color: rgb(214, 214, 214);
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 5px 10px;
     align-items: center;
 }
-
+.details {
+    cursor: pointer;
+    padding: 5px;
+}
+summary{
+    font-size: 20px;
+}
+summary::marker {
+    /* Add your custom marker styling here */
+    content: "➡"; /* Example: using a bullet point */
+    color: rgb(98, 98, 98);
+    font-size: 20px;
+}
 button.remove {
     border-radius: 10px;
     background-color: #fff;
