@@ -1,14 +1,14 @@
-const prompt = require("prompt-sync")({ sigint: true });
-
-let age = prompt("What's your age? ");
-age = Number.parseInt(age);
-console.log(age);
-// conditional statement (if else)
-if (age >= 18) {
-        console.log("You are eligible")
-} else if (age < 9) {
-    console.log("you are kid")
-}
-else {
-    console.log("you are not eligible")
-}
+class Animal {
+    constructor(name) {
+      this.name = Animal.capitalize(name)
+    }
+    walk() {
+      alert("Animal " + this.name + " is walking")
+    }
+    static capitalize(name) {
+      return name.charAt(0).toUpperCase() + name.substr(1, name.length)
+    }
+  }
+  
+  j = new Animal("jack")
+  j.walk()

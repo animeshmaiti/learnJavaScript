@@ -32,6 +32,10 @@ const compareDes=(a,b)=>{
     return b-a
 }
 let num3=[34,78,233,455,389,677]
+// The sort method will repeatedly call compareAsc with pairs of elements from the array.
+// If the result of compareAsc(a, b) is negative, it means that a should come before b in the sorted order.
+// If it's positive, it means that a should come after b. If it's zero,
+// the elements are considered equal in terms of sorting.
 num3.sort(compareAsc);// ascending order
 console.log(num3);/*[ 34, 78, 233, 389, 455, 677 ]*/
 num3.sort(compareDes);// descending order
