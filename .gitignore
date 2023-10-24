@@ -1,3 +1,4 @@
 *.pdf
 *.mp3
 *node_modules
+*uploads
